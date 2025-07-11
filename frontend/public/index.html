@@ -33,7 +33,7 @@ function loadData() {
   const search = document.getElementById('searchInput').value;
   const maxPrice = document.getElementById('priceFilter').value;
 
-  let url = 'http://localhost:5000/api/earphones';
+  let url = 'https://smart-data-display-l9t5.onrender.com/api/earphones';
   const params = [];
   if (search) params.push(`search=${encodeURIComponent(search)}`);
   if (maxPrice) params.push(`maxPrice=${encodeURIComponent(maxPrice)}`);
